@@ -142,7 +142,7 @@
       </inertial>
   </link>
 
-  <joint name="caster_back_right_joint type="fixed">
+  <joint name="caster_back_right_joint" type="fixed">
     <parent link="base_link"/>
     <child link="caster_back_right_link"/>
     <origin xyz="-0.113 -0.064 -0.004" rpy="-1.57 0 0"/> <!-- Adjusted for Burger -->
@@ -267,4 +267,5 @@
   <link name="camera_depth_optical_frame"/>
 
 </robot>
-"
+
+

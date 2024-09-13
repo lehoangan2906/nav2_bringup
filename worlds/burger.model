@@ -472,7 +472,12 @@
 
         <!-- limits -->
         <max_wheel_torque>20</max_wheel_torque>
-        <max_wheel_acceleration>1.0</max_wheel_acceleration>
+        <max_wheel_acceleration>0.8</max_wheel_acceleration>
+
+        <!-- Velocity limits (this is where you adjust the max velocities) -->
+        <max_linear_velocity>0.4</max_linear_velocity> <!-- Set linear velocity to 0.4 m/s -->
+        <max_angular_velocity>0.6</max_angular_velocity> <!-- Set angular velocity to 0.6 rad/s -->
+
 
         <command_topic>cmd_vel</command_topic>
 
@@ -497,4 +502,5 @@
 
     </model>
 </sdf>
+
 
