@@ -199,7 +199,7 @@
   <joint name="scan_joint" type="fixed">
     <parent link="base_link"/>
     <child link="base_scan"/>
-    <origin xyz="-0.033 0 0.122" rpy="0 0 0"/> <!-- Adjusted for Burger -->
+    <origin xyz="-0.033 0 0.715" rpy="0 0 0"/> <!-- Adjusted for Burger -->
   </joint>
 
   <link name="base_scan">
@@ -231,7 +231,7 @@
 
   <!-- Include the D415 camera -->
   <xacro:sensor_d415 parent="base_link">
-    <origin xyz="0.064 -0.065 0.094" rpy="0 0 0"/>
+    <origin xyz="0.064 -0.065 0.65" rpy="0 0 0"/>
   </xacro:sensor_d415>
 
   <joint name="camera_rgb_joint" type="fixed">
@@ -267,5 +267,3 @@
   <link name="camera_depth_optical_frame"/>
 
 </robot>
-
-
